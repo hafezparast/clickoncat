@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+
+//اینجا عکس اصلس هست که مرتب عوض میشه
+<div>
+<img id="image" src="normal.jpeg">
+</div>
+
+// اینجا عکس کلیدهاست که هر کلیدی یک کاری میکنه (عکس را عوض میکنه)
+<div>
+    <img onClick="openMouth()" src="lookAtMe.png">
+    <img onClick="closeMouth()" src="dontLook.png">
+</div>
+
+
+<body>
+
+// اینجا میگی که هر کلید چه عکسی را جابگزین میکنه
+<script>
+function openMouth() {document.getElementById("image").src = "looking.jpeg";}
+function closeMouth() {document.getElementById("image").src = "normal.jpeg";}
+</script>
+
+</html>
